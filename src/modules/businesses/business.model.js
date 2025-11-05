@@ -49,10 +49,11 @@ const locationSchema = new mongoose.Schema(
         validator: function(v) {
           return v >= -180 && v <= 180;
         },
-        message: 'Longitude must be between -180 and 180 degrees'
+        message: 'Longitude must be between -180 and 1800 degrees'
       }
     },
-    
+
+
     formattedAddress: {
       type: String,
       required: true,
